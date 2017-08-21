@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine
 
 RUN if [ $(wget -qO- ipinfo.io/country) == CN ]; then echo "http://mirrors.ustc.edu.cn/alpine/v3.4/main/" > /etc/apk/repositories ;fi  \
     &&  apk update \
