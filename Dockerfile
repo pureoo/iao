@@ -6,4 +6,4 @@ RUN if [ $(wget -qO- ipinfo.io/country) == CN ]; then echo "http://mirrors.ustc.
     && pip --no-cache-dir install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 #ADD config.json /config.json
 #EXPOSE your_port	
-ENTRYPOINT ["/usr/bin/ssserver"]instalver"]
+ENTRYPOINT ["/usr/bin/ssserver"]
